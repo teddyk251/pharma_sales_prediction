@@ -1,0 +1,7 @@
+dvc
+'dvc[gdrive]'
+pandas
+numpy 
+mlflow
+matplotlib
+seaborn
