@@ -26,7 +26,8 @@ class DataCleaner:
         """
         convert columns to string
         """
-        df[cols] = df[cols].astype(str)
+        for col in cols:
+            df[col] = df[col].astype(str)
 
         return df
 
@@ -98,7 +99,6 @@ class DataCleaner:
             imputer = SimpleImputer(strategy='most_frequent')
             filled_df = pd.DataFrame(imputer.fit_transform(df[categorical_columns]))
             filled_df.columns = categorical_columns
-            print(filled_df.shape)
             # df[categorical_columns] = filled_df
             return filled_df
         else:

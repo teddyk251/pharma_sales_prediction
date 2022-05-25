@@ -15,13 +15,16 @@ class Utils:
         """
         Load data from a csv file.
         """
-        with dvc.api.open(
-            repo=repo, 
-            path=data_path, 
-            rev=tag,
-            mode="r"
-        ) as fd:
-            df = pd.read_csv(fd)
+        try:
+            with dvc.api.open(
+                repo=repo, 
+                path=data_path, 
+                rev=tag,
+                mode="r"
+            ) as fd:
+                df = pd.read_csv(fd)
+        except Exception:
+            print("File not found.")
         return df
 
     def load_data(self, data_path: str) -> pd.DataFrame:
@@ -38,7 +41,6 @@ class Utils:
         """
         Save data to a csv file.
         """
-        df.to_csv(csv_path, index=False)
         try:
             df.to_csv(csv_path, index=False)
             print('File Successfully Saved.!!!')
