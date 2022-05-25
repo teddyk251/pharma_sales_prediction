@@ -1,0 +1,17 @@
+name: metrics
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: iterative/setup-cml@v1
+      - name: Metrics
+
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |     
+          echo "# A simple demo to demonstrate that CML is working." > report.md
+          
+          cml send-comment report.md
