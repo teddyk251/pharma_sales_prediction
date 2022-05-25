@@ -4,3 +4,6 @@
 /train.csv
 /store_cleaned.csv
 /train_cleaned.csv
+/train_merged.csv
+/store_cleaned_latest.csv
+/train_cleaned_latest.csv
