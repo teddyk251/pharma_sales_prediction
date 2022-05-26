@@ -7,6 +7,10 @@ from sklearn.model_selection import train_test_split
 # To Preproccesing our data
 from sklearn.preprocessing import LabelEncoder
 
+import log
+
+logger = log.setup_custom_logger(__name__, file_name='../logs/utils.log')
+
 class Utils:
     '''
     Utility class for preprocessing data.
@@ -23,8 +27,9 @@ class Utils:
                 mode="r"
             ) as fd:
                 df = pd.read_csv(fd)
+                logger.info("Data loaded from DVC.")
         except Exception:
-            print("File not found.")
+            logger.error("File not found.")
         return df
 
     def load_data(self, data_path: str) -> pd.DataFrame:
@@ -34,7 +39,7 @@ class Utils:
         try:
             df = pd.read_csv(data_path)
         except FileNotFoundError:
-            print("File not found.")
+            logger.error("File not found.")
         return df
 
     def save_csv(self, df:pd.DataFrame, csv_path:str):
@@ -43,12 +48,12 @@ class Utils:
         """
         try:
             df.to_csv(csv_path, index=False)
-            print('File Successfully Saved.!!!')
+            logger.info('File Successfully Saved.!!!')
         except Exception:
-            print("Save failed...")
+            logger.error("Save failed...")
         return df
 
-    def split_train_test_val(X:pd.DataFrame, Y:pd.DataFrame, size:tuple)-> list:
+    def split_train_test_val(self, X:pd.DataFrame, Y:pd.DataFrame, size:tuple)-> list:
         """
         Split the data into train, test and validation.
         """
