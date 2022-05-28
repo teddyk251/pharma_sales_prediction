@@ -1,5 +1,11 @@
 name: metrics
-on: [push]
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -7,11 +13,19 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - uses: iterative/setup-cml@v1
-      - name: Metrics
+      - name: DVC Pull
 
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |    
+          
+          GDRIVE_TOKEN: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+        run: | 
+          mkdir -p .dvc/tmp
+          touch .dvc/tmo/gdrive-user-credentials.json
+          echo $GDRIVE_TOKEN > .dvc/tmp/gdrive-user-credentials.json
+          dvc pull -r myremote
+
+      - name: metrics   
 
           echo "# A simple demo to demonstrate that CML is working." > report.md
 
