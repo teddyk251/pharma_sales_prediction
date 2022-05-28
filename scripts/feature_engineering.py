@@ -31,7 +31,7 @@ class FeatureEngineering:
         self.df = preprocess_pipeline.fit_transform(self.df)
 
 
-    def calc_date_gap(self, holidays: list, day: pd.Datetime) -> tuple:
+    def calc_date_gap(self, holidays: list, day) -> tuple:
         '''
             Calculate the gap between the given date and the next and previous holiday
         '''

@@ -1,0 +1,6 @@
+2022-05-28 14:50:56,611 - model - INFO - model - preprocess - line 53 - Preprocessing complete. Data ready for modeling.
+2022-05-28 15:40:15,397 - model - INFO - model - preprocess - line 53 - Preprocessing complete. Data ready for modeling.
+2022-05-28 15:49:04,201 - model - ERROR - model - get_features_importance - line 105 - Model is not a linear regression model
+2022-05-28 15:55:36,798 - model - INFO - model - preprocess - line 53 - Preprocessing complete. Data ready for modeling.
+2022-05-28 15:59:05,765 - model - INFO - model - preprocess - line 53 - Preprocessing complete. Data ready for modeling.
+2022-05-28 16:03:23,143 - model - INFO - model - preprocess - line 53 - Preprocessing complete. Data ready for modeling.
