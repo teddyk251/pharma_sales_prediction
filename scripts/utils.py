@@ -53,13 +53,14 @@ class Utils:
             logger.error("Save failed...")
         return df
 
-    def split_train_test_val(self, X:pd.DataFrame, Y:pd.DataFrame, size:tuple)-> list:
+    def split_train_test_val(self, input_data:tuple, size:tuple)-> list:
         """
         Split the data into train, test and validation.
         """
+        X,Y = input_data
         train_x, temp_x, train_y, temp_y = train_test_split(X, Y, train_size=size[0], test_size=size[1]+size[2], random_state=42)
         test_x, val_x, test_y, val_y = train_test_split(temp_x, temp_y, train_size=size[1]/(size[1]+size[2]), test_size=size[2]/(size[1]+size[2]), random_state=42)
-        return train_x, train_y, test_x, test_y, val_x, val_y
+        return [train_x, train_y, test_x, test_y, val_x, val_y]
 
     def encode_features(self,df:pd.DataFrame)-> pd.DataFrame:
         """
