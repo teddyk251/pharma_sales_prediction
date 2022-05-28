@@ -88,8 +88,6 @@ jupyter-client==7.3.1
 jupyter-core==4.10.0
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==1.1.0
-keras==2.9.0
-Keras-Preprocessing==1.1.2
 kiwisolver==1.4.2
 libclang==14.0.1
 mailchecker==4.1.17
@@ -178,12 +176,6 @@ stack-data==0.2.0
 statsmodels==0.13.2
 streamlit==1.9.2
 tabulate==0.8.9
-tensorboard==2.9.0
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.1
-tensorflow-cpu==2.9.1
-tensorflow-estimator==2.9.0
-tensorflow-io-gcs-filesystem==0.26.0
 termcolor==1.1.0
 terminado==0.15.0
 text-unidecode==1.3
