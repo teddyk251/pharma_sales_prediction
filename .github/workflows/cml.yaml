@@ -18,7 +18,7 @@ jobs:
 
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GDRIVE_TOKEN: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+          # GDRIVE_TOKEN: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: | 
           mkdir -p .dvc/tmp
           touch .dvc/tmo/gdrive-user-credentials.json
