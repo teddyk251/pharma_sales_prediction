@@ -24,10 +24,10 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GDRIVE_TOKEN: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |    
-          mkdir -p .dvc/tmp
-          touch .dvc/tmp/gdrive-user-credentials.json
-          echo $GDRIVE_TOKEN > .dvc/tmp/gdrive-user-credentials.json
-          dvc pull -r myremote
+          # mkdir -p .dvc/tmp
+          # touch .dvc/tmp/gdrive-user-credentials.json
+          # echo $GDRIVE_TOKEN > .dvc/tmp/gdrive-user-credentials.json
+          # dvc pull -r myremote
 
           echo "# A simple demo to demonstrate that CML is working." > report.md
 
