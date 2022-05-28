@@ -13,5 +13,13 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |     
           echo "# A simple demo to demonstrate that CML is working." > report.md
+
+          echo "# Predictions" > report.md
+                    
+          cml publish ./images/prediction_graph.png --md >> report.md
+
+          echo "# Feature Importance" > report.md
+                    
+          cml publish ./images/feature_importance.png --md >> report.md
           
           cml send-comment report.md
