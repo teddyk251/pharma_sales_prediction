@@ -27,7 +27,7 @@ utils = Utils()
 cleaner = DataCleaner()
 
 logger = log.setup_custom_logger(
-    __name__, file_name='../logs/model.log')
+    __name__, file_name='logs/model.log')
 
 
 class Model:

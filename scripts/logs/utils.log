@@ -1,0 +1,37 @@
+2022-05-26 11:19:29,742 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-26 11:19:30,389 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-26 11:19:30,427 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-26 11:19:43,526 - utils - INFO - utils - save_csv - line 51 - File Successfully Saved.!!!
+2022-05-26 11:20:27,134 - utils - INFO - utils - save_csv - line 51 - File Successfully Saved.!!!
+2022-05-26 11:20:33,526 - utils - INFO - utils - save_csv - line 51 - File Successfully Saved.!!!
+2022-05-26 11:21:15,546 - utils - INFO - utils - save_csv - line 51 - File Successfully Saved.!!!
+2022-05-26 11:27:50,719 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-26 11:27:51,317 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-26 11:27:51,344 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 13:51:55,983 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 14:15:36,700 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 14:26:38,022 - utils - INFO - utils - save_csv - line 51 - File Successfully Saved.!!!
+2022-05-28 14:28:49,010 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 14:30:45,073 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 14:36:52,051 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 14:41:21,989 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 14:50:52,228 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 15:36:30,017 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 15:38:15,002 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 15:54:14,104 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 15:55:00,722 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 15:55:34,190 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 15:59:02,736 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 21:33:59,547 - utils - ERROR - utils - load_data_dvc - line 32 - File not found.
+2022-05-28 21:49:30,750 - utils - ERROR - utils - load_data_dvc - line 32 - File not found.
+2022-05-28 21:54:38,889 - utils - ERROR - utils - load_data_dvc - line 32 - File not found.
+2022-05-28 21:58:23,368 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 21:58:26,229 - utils - ERROR - utils - save_csv - line 53 - Save failed...
+2022-05-28 21:58:48,957 - utils - INFO - utils - save_csv - line 51 - File Successfully Saved.!!!
+2022-05-28 23:39:37,210 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 23:53:03,215 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 23:53:28,944 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-28 23:53:45,895 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-29 08:51:14,845 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-29 10:16:17,075 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.
+2022-05-29 10:24:38,827 - utils - INFO - utils - load_data_dvc - line 30 - Data loaded from DVC.

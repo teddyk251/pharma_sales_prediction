@@ -6,7 +6,7 @@ from sklearn.impute import SimpleImputer
 
 from scripts import log
 
-logger = log.setup_custom_logger(__name__, file_name='../logs/datacleaner.log')
+logger = log.setup_custom_logger(__name__, file_name='logs/datacleaner.log')
 
 # To Preproccesing our data
 

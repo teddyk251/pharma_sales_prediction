@@ -16,7 +16,7 @@ from scripts.datacleaner import DataCleaner
 cleaner = DataCleaner()
 
 logger = log.setup_custom_logger(
-    __name__, file_name='./logs/feature_engineering.log')
+    __name__, file_name='logs/feature_engineering.log')
 
 
 class FeatureEngineering:

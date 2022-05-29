@@ -16,7 +16,7 @@ from scripts import log
 cleaner = DataCleaner()
 utils = Utils()
 
-logger = log.setup_custom_logger(__name__, file_name='../logs/preprocess_dashboard.log')
+logger = log.setup_custom_logger(__name__, file_name='logs/preprocess_dashboard.log')
 
 
 class Preprocess:

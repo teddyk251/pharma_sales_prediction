@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 
 from scripts import log
 
-logger = log.setup_custom_logger(__name__, file_name='../logs/utils.log')
+logger = log.setup_custom_logger(__name__, file_name='logs/utils.log')
 
 class Utils:
     '''
