@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 
-import log
+from scripts import log
 import os
+import dvc.api
 import sys
 sys.path.append(os.path.abspath(os.path.join('data')))
 sys.path.insert(0,'../scripts/')
@@ -10,12 +11,12 @@ sys.path.insert(0,'../scripts/')
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import FunctionTransformer
 
-from datacleaner import DataCleaner
+from scripts.datacleaner import DataCleaner
 
 cleaner = DataCleaner()
 
 logger = log.setup_custom_logger(
-    __name__, file_name='../logs/feature_engineering.log')
+    __name__, file_name='./logs/feature_engineering.log')
 
 
 class FeatureEngineering:
@@ -84,6 +85,7 @@ class FeatureEngineering:
         '''
             Generate new data columns using the existing date column
         '''
+        df['Date'] = pd.to_datetime(df['Date'])
         df['weekday'] = df['DayOfWeek'].apply(lambda x: 1 if x < 6 else 0)
         df['weekend'] = df['DayOfWeek'].apply(lambda x: 1 if x > 5 else 0)
         df['month'] = df['Date'].apply(lambda x: x.month)

@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import Normalizer, MinMaxScaler, StandardScaler
 from sklearn.impute import SimpleImputer
 
-import log
+from scripts import log
 
 logger = log.setup_custom_logger(__name__, file_name='../logs/datacleaner.log')
 
