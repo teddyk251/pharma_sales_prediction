@@ -41,5 +41,5 @@ jobs:
           echo $GDRIVE_TOKEN > .dvc/tmp/gdrive-user-credentials.json
           dvc pull -r myremote 
       - name: Run tests
-        run: python -m unittest tests/test_extract_dataframe.py
+        run: python -m unittest tests/test_loadData.py
       
