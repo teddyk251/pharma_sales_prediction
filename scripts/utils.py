@@ -7,9 +7,9 @@ from sklearn.model_selection import train_test_split
 # To Preproccesing our data
 from sklearn.preprocessing import LabelEncoder
 
-import log
+from scripts import log
 
-logger = log.setup_custom_logger(__name__, file_name='../logs/utils.log')
+logger = log.setup_custom_logger(__name__, file_name='logs/utils.log')
 
 class Utils:
     '''
