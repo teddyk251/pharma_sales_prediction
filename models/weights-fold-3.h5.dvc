@@ -1,0 +1,4 @@
+outs:
+- md5: c4602b7fee728750f898865ff0d73b29
+  size: 2918128
+  path: weights-fold-3.h5
