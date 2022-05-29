@@ -39,7 +39,7 @@ jobs:
           mkdir -p .dvc/tmp
           touch .dvc/tmp/gdrive-user-credentials.json
           echo $GDRIVE_TOKEN > .dvc/tmp/gdrive-user-credentials.json
-          dvc pull -r dvc_remote 
+          dvc pull -r myremote 
       - name: Run tests
         run: python -m unittest tests/test_extract_dataframe.py
       
